@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
+        <div class="image-container">
+            <img src="image.jpg" alt="signUpImages">
+        
+            <p>Photo by <a href="https://unsplash.com/@coombez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Doncoombez</a> on <a href="https://unsplash.com/photos/a-single-red-mushroom-with-white-spots-in-grass--4ubDpIzDiU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+        <div class="form-container">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+            <h1>Let's do this!</h1>
+            <form action="POST">
+                
+                <div>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="name" placeholder="e.g. John">
+                </div>
+                <div>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="e.g. Doe">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="johnDoe@top.com">
+                </div>
+                <div>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="+46 506 457 52">
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
+            </form>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
+
 
