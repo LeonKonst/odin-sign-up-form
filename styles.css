@@ -3,6 +3,9 @@
     --font-color:rgb(143, 62, 8);
     --background-color: rgb(223, 209, 151);
     --background-color2: rgb(223, 209, 151, 0.5);
+
+    --error-input: rgb(228, 17, 17);
+    --focus-input: rgb(113, 180, 211);
 }
 
 @font-face {
@@ -79,9 +82,20 @@ input{
     border-radius: 5px;
     border: 2px solid var(--font-color);
     box-sizing:content-box;
+    padding: 5px;
     width: 150px;
     height: 40px;
     font-size: 12px;
+}
+
+input:invalid{
+    border: 2px solid var(--error-input);
+    box-shadow: inset 0px 0px 2px 2px var(--error-input);
+}
+
+input:focus{
+    border: 2px solid var(--focus-input);
+    box-shadow: inset 0px 0px 2px 2px var(--focus-input);
 }
 
 .form-container>*{
